@@ -13,11 +13,13 @@ class Cursos extends CI_Controller {
 		$this->load->view('header');
         $data['cursos'] = $this->cursos_model->obtenerCursos();
         $this->load->view('cursos/cursos',$data);
+        $this->load->view('footer');
 	}
 
     function nuevo(){
 		$this->load->view('header');
         $this->load->view('cursos/formulario');
+        $this->load->view('footer');
 	}
 
     function recibirDatos(){
