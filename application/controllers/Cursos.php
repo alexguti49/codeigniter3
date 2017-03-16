@@ -10,9 +10,11 @@ class Cursos extends CI_Controller {
 	}
 
 	function index(){
+
 		$data['segmento'] = $this->uri->segment(3);
 		$this->load->view('header');
 		$this->load->view('footer');
+
 		if(!$data['segmento']){
 			$data['cursos'] = $this->cursos_model->obtenerCursos();
 		}
@@ -58,7 +60,7 @@ class Cursos extends CI_Controller {
 		$data['id'] = $this->uri->segment(3);
 		$data['curso'] = $this->cursos_model->obtenerCurso($data['id']);
 		$this->load->view('cursos/editar', $data);
-		header("location:../index");
+		header("location:../index/");
 	}
 
 // 	function index(){

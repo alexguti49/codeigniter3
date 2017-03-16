@@ -4,6 +4,12 @@
 </style>
 
 <? if($cursos){ ?>
+
+<?  $url = $this->uri->segment(2);
+    if($url != "index"){
+      header ("Location: http://localhost/alex/codeigniter3/index.php/cursos/index/");
+    }
+?>
 <main>
 <div class="container-fluid text-center">
     <div class="row content">
