@@ -1,15 +1,9 @@
 <style>
-    main{padding-bottom:100px;}
     thead{font-weight: bold;}
 </style>
 
 <? if($cursos){ ?>
 
-<?  $url = $this->uri->segment(2);
-    if($url != "index"){
-      header ("Location: http://localhost/alex/codeigniter3/index.php/cursos/index/");
-    }
-?>
 <main>
 <div class="container-fluid text-center">
     <div class="row content">
@@ -19,8 +13,9 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <td>NOMBRE</td>
-                            <td>VIDEOS</td>
+                          <td>ID</td>
+                          <td>NOMBRE</td>
+                          <td>VIDEOS</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -28,8 +23,9 @@
                         <? foreach($cursos->result() as $x){ ?>
 
                         <tr>
-                            <td><a href="<?= $x->cursos_id; ?>"><?= $x->cursos_nombre; ?> </a></td>
-                            <td><?php echo $x->cursos_videos; ?> </td>
+                          <td><?php echo $x->cursos_id; ?> </td>
+                          <td><a href="<?= $x->cursos_id; ?>"><?= $x->cursos_nombre; ?> </a></td>
+                          <td><?php echo $x->cursos_videos; ?> </td>
                         </tr>
                         <? } ?>
 
