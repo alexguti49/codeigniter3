@@ -20,12 +20,12 @@
                     </thead>
                     <tbody>
 
-                        <? foreach($cursos->result() as $x){ ?>
-
+                        <?  foreach($cursos->result() as $x){ ?>
+                        <?  $link = "http://localhost/alex/codeigniter3/cursos/index/"; ?>
                         <tr>
-                          <td><?php echo $x->cursos_id; ?> </td>
-                          <td><a href="<?= $x->cursos_id; ?>"><?= $x->cursos_nombre; ?> </a></td>
-                          <td><?php echo $x->cursos_videos; ?> </td>
+                          <td>  <?= $x->cursos_id; ?> </td>
+                          <td>  <a href="<?= $link.$x->cursos_id; ?>"><?= $x->cursos_nombre; ?> </a></td>
+                          <td>  <?= $x->cursos_videos; ?> </td>
                         </tr>
                         <? } ?>
 

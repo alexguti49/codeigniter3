@@ -11,10 +11,10 @@ class Cursos extends CI_Controller {
 
 	function index(){
 		// Condicion para que aparezca el /index/ en la barra de navegacion
-    $url = $this->uri->segment(2);
-    if($url != "index"){
-      header ("Location: ../cursos/index/");
-    } // termina condicion
+    // $url = $this->uri->segment(2);
+    // if($url != "index"){
+    //   header ("Location: ../cursos/index/");
+    // } // termina condicion
 
 		$data['segmento'] = $this->uri->segment(3);
 		$this->load->view('header');
