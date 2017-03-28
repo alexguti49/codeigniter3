@@ -18,8 +18,8 @@
                     'class' => 'form-control',
                     'value' => $curso->result()[0]->cursos_videos
                 );
-                $añadir = array(
-                    'id' => 'add',
+                $editar = array(
+                    'id' => 'edi',
                     'type' => 'submit',
                     'value' => 'EDITAR',
                     'class' => 'btn btn-default'
@@ -37,7 +37,7 @@
             </div>
 
             <center>
-                <?= form_submit($añadir) ?>
+                <?= form_submit($editar) ?>
             </center>
 
             <?= form_close() ?>
