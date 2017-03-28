@@ -1,31 +1,24 @@
 <style>
-    /* Set black background color, white text and some padding */
-    footer {
-        background-color: #101010;
-        color: white;
-        padding: 10px;
-        width:100%; 
-        position:absolute; 
-        bottom:0; 
-        left:0;
-        }
-        footer .sidenav {
+
+    footer .sidenav {
             padding-top: 20px;
             background-color: #101010;
             height: 100%;
-        }
-        /*CUANDO SE TRABAJA CON ID SE UTILIZA: #*/
-        #face { color: blue; padding: 0em .5em;}
-        #twet { color: turquoise; padding: 0em .5em;}
-        #inst { color: mediumvioletred; padding: 0em .5em;}
+    }
 
-        p > a { color: white; font-size: 1.3em;}
-        p > a:link {text-decoration: none;}
-        p > a:hover { color:chartreuse; text-decoration: none;}
-        p > a:visited {text-decoration: none;}
-    
+    /* CUANDO SE TRABAJA CON ID SE UTILIZA: # */
+    #face { color: blue; padding: 0em .5em;}
+    #twet { color: turquoise; padding: 0em .5em;}
+    #inst { color: mediumvioletred; padding: 0em .5em;}
+
+    p > a { color: white; font-size: 1.3em;}
+    p > a:link {text-decoration: none;}
+    p > a:hover { color:chartreuse; text-decoration: none;}
+    p > a:visited {text-decoration: none;}
+
     @media screen and (max-width: 767px) {
-        footer{position:initial;}
+        footer{ position:initial; }
+        /*.main { min-height: 600px; }*/
     }
 
 </style>
